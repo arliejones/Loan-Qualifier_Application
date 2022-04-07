@@ -8,7 +8,7 @@ import csv
 
 
 def load_csv(csvpath):
-    """Reads the CSV file from path provided.
+    """Reads the CSV file from path provided.s
 
     Args:
         csvpath (Path): The csv file path.
@@ -28,3 +28,15 @@ def load_csv(csvpath):
         for row in csvreader:
             data.append(row)
     return data
+
+
+#WRITE HERE THE FUNCTION FOR SAVING CSV
+
+def save_csv(csvpath, qualifying_loans): 
+
+    with open(csvpath, "w") as csvfile:
+        csvwriter = csv.writer(csvfile, delimiter=",")
+
+        for loan in qualifying_loans:
+            csvwriter.writerow(loan)
+

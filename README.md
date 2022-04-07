@@ -1,6 +1,6 @@
 # Loan Qualifier Application
 
-This application was built out of inspiration from my previous loan valuation program in Python. It is intended for a user who wants to be matched with a qualifying loan. Based on the user's financial standing and their inputs into the application, the program will decide whether or not they qualify, and if so, will match them with the appropriate loan. The user will also be able to save their results by exporting their loan information into a csv file. 
+This application was built out of inspiration from my previous loan valuation program in Python. It is intended for a user who wants to be matched with a qualifying loan. Based on the user's financial standing and their inputs into the application, the program will decide whether or not they qualify, and if so, will match them with the appropriate loan. Tthe user will also be able to save their results by exporting their loan information into a csv file, if they would like.
 
 ---
 

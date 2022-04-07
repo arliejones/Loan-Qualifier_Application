@@ -10,7 +10,7 @@ import fire #imports the fire library to turn components into CLIs
 import questionary #imports the questionary library to build user promts in the CLI
 from pathlib import Path #from the pathlib library, imports Path to organize directories
 
-from qualifier.utils.fileio import load_csv #imports the function named load_csv from the fileio file in the qualifier.utils
+from qualifier.utils.fileio import load_csv,save_csv #imports the function named load_csv from the fileio file in the qualifier.utils
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
@@ -22,6 +22,7 @@ from qualifier.filters.credit_score import filter_credit_score #imports the filt
 from qualifier.filters.debt_to_income import filter_debt_to_income #imports the filter debt to income function stored in the file under qualifier.filters
 from qualifier.filters.loan_to_value import filter_loan_to_value #imports the filter loan to value function stored in the file under qualifier.filters
 
+#header = []
 
 def load_bank_data(): #defining function load_bank_data as first query
     """Ask for the file path to the latest banking data and load the CSV file.
@@ -98,6 +99,8 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     return bank_data_filtered #return the list of qualifying loans to be referenced later
 
 
+#Write here, if no qualifying loans exists, sys.exit
+
 def save_qualifying_loans(qualifying_loans): #define function save qualifying loans, passing the list of qualifying loans
     """Saves the qualifying loans to a CSV file.
 
@@ -105,8 +108,17 @@ def save_qualifying_loans(qualifying_loans): #define function save qualifying lo
         qualifying_loans (list of lists): The qualifying bank loans.
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
-
+    if not qualifying_loans:
+        sys.exit("Unfortunately you have not qualified for a loan. Thank you for using our service and having an nice day.")
+    save_file = questionary.confirm("Would you like to save your qualifying loans?").ask()
+    
+    if save_file:
+        csvpath = questionary.text("Enter a file path to save your results(.csv):").ask()
+        csvpath = Path(csvpath)
+        save_csv(csvpath,qualifying_loans)
+        
+            
+    #insert 
 
 def run(): #defining main function for running the script above 
     """The main function for running the script."""
