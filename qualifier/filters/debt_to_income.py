@@ -1,25 +1,10 @@
-# -*- coding: utf-8 -*-
-"""Debt to Income Filter.
-
-This script filters the bank list by the applicant's
-maximum debt-to-income ratio.
-
-"""
+"""Debt to Income Filter: filters the bank list by the applicant's maximum debt-to-income ratio."""
 
 
-def filter_debt_to_income(monthly_debt_ratio, bank_list):
-    """Filters the bank list by the maximum debt-to-income ratio allowed by the bank.
+def filter_debt_to_income(monthly_debt_ratio, bank_list): #def function filter debt to income passing monthly debt ratio and bank list as arguments
 
-    Args:
-        monthly_debt_ratio (float): The applicant's monthly debt ratio.
-        bank_list (list of lists): The available bank loans.
-
-    Returns:
-        A list of qualifying bank loans.
-    """
-
-    debit_to_income_approval_list = []
-    for bank in bank_list:
-        if monthly_debt_ratio <= float(bank[3]):
-            debit_to_income_approval_list.append(bank)
-    return debit_to_income_approval_list
+    debit_to_income_approval_list = [] #create empty list to append approved loans to later on
+    for bank in bank_list: #for loop to iterate through bank list
+        if monthly_debt_ratio <= float(bank[3]): #conditional - if the monthly debt ratio is less than or greater to the max ratio allowed by the bank
+            debit_to_income_approval_list.append(bank) #if above is true, append the approved loans to the empty list debut to income approval list
+    return debit_to_income_approval_list #return list of qualifying bank loans

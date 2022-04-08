@@ -1,10 +1,5 @@
-"""Loan Qualifier Application.
+"""Loan Qualifier Application. This is a command line application to match applicants with qualifying loans."""
 
-This is a command line application to match applicants with qualifying loans.
-
-Example:
-    $ python app.py
-"""
 import sys #import sys to provide various functions and variables
 import fire #imports the fire library to turn components into CLIs
 import questionary #imports the questionary library to build user promts in the CLI
@@ -22,30 +17,16 @@ from qualifier.filters.credit_score import filter_credit_score #imports the filt
 from qualifier.filters.debt_to_income import filter_debt_to_income #imports the filter debt to income function stored in the file under qualifier.filters
 from qualifier.filters.loan_to_value import filter_loan_to_value #imports the filter loan to value function stored in the file under qualifier.filters
 
-#header = []
-
 def load_bank_data(): #defining function load_bank_data as first query
-    """Ask for the file path to the latest banking data and load the CSV file.
-
-    Returns:
-        The bank data from the data rate sheet CSV file.
-    """
-
     csvpath = questionary.text("Enter a file path to a rate-sheet (.csv):").ask() #Prompt in CLI will ask the user to enter a file path
-    csvpath = Path(csvpath)
+    csvpath = Path(csvpath) #saves that file by using Path module to assign to csvpath
     if not csvpath.exists(): #If that file path does not exist...
         sys.exit(f"Oops! Can't find this path: {csvpath}") #The system will exit by displaying an error "Oops! Cant find this path: with the path entered"
 
-    return load_csv(csvpath) #We will want to return this function calling the csvpath to use in the future.
+    return load_csv(csvpath) #Return bank data from the rate sheet csv file entered
 
 
 def get_applicant_info(): #defining function get_applicant_info as 2nd query if the user inputted an existing csv path
-    """Prompt dialog to get the applicant's financial information.
-
-    Returns:
-        Returns the applicant's financial information.
-    """
-
     credit_score = questionary.text("What's your credit score?").ask() #Promt in the CLI will ask the user to input their credit score
     debt = questionary.text("What's your current amount of monthly debt?").ask() #Promt in the CLI will ask the user to input their monthly debt
     income = questionary.text("What's your total monthly income?").ask() #Promt in the CLI will ask the user to input their monthly income
@@ -58,85 +39,51 @@ def get_applicant_info(): #defining function get_applicant_info as 2nd query if 
     loan_amount = float(loan_amount) #dependent on what the user enters, this will convert the input into a number with a decimal
     home_value = float(home_value) #dependent on what the user enters, this will convert the input into a a number with a decimal
 
-    return credit_score, debt, income, loan_amount, home_value #Return the values inputted to use for the rest of the application
+    return credit_score, debt, income, loan_amount, home_value #Return the values inputted as the applicants financial info to use for the rest of the application
 
 
 def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_value): #defining a function to find the qualifying loans as next query, based on what the user has inputted above
-    """Determine which loans the user qualifies for.
 
-    Loan qualification criteria is based on:
-        - Credit Score
-        - Loan Size
-        - Debit to Income ratio (calculated)
-        - Loan to Value ratio (calculated)
-
-    Args:
-        bank_data (list): A list of bank data.
-        credit_score (int): The applicant's current credit score.
-        debt (float): The applicant's total monthly debt payments.
-        income (float): The applicant's total monthly income.
-        loan (float): The total loan amount applied for.
-        home_value (float): The estimated home value.
-
-    Returns:
-        A list of the banks willing to underwrite the loan.
-
-    """
-
-    monthly_debt_ratio = calculate_monthly_debt_ratio(debt, income) # Calculate the monthly debt ratio by calling the existing function and assign to variable monthly_debt_ratio
+    monthly_debt_ratio = calculate_monthly_debt_ratio(debt, income) # Calculate the monthly debt ratio by calling the imported function and assign to variable monthly_debt_ratio
     print(f"The monthly debt to income ratio is {monthly_debt_ratio:.02f}") #Print the result of above with an f string description and rounding to 2 decimal places
 
-    loan_to_value_ratio = calculate_loan_to_value_ratio(loan, home_value) # Calculate loan to value ratio by calling the existing function and assign to variable loan_to_value_ratio
+    loan_to_value_ratio = calculate_loan_to_value_ratio(loan, home_value) # Calculate loan to value ratio by calling the imported function and assign to variable loan_to_value_ratio
     print(f"The loan to value ratio is {loan_to_value_ratio:.02f}.") #Print the result of above with an f string description and rounding to 2 decimal places
 
-    bank_data_filtered = filter_max_loan_size(loan, bank_data) #Run qualification filter from existing function for max loan size
-    bank_data_filtered = filter_credit_score(credit_score, bank_data_filtered) #Run qualification filter from existing function for credit score
-    bank_data_filtered = filter_debt_to_income(monthly_debt_ratio, bank_data_filtered) #Run qualification filter from existing function for debt to income
-    bank_data_filtered = filter_loan_to_value(loan_to_value_ratio, bank_data_filtered) #Run qualification filter from existing function for loan to value
+    bank_data_filtered = filter_max_loan_size(loan, bank_data) #Run qualification filter from imported function for max loan size
+    bank_data_filtered = filter_credit_score(credit_score, bank_data_filtered) #Run qualification filter from imported function for credit score
+    bank_data_filtered = filter_debt_to_income(monthly_debt_ratio, bank_data_filtered) #Run qualification filter from imported function for debt to income
+    bank_data_filtered = filter_loan_to_value(loan_to_value_ratio, bank_data_filtered) #Run qualification filter from imported function for loan to value
 
     print(f"Found {len(bank_data_filtered)} qualifying loans") #After running all filters with given parameters, use the len function to count how many qualifying loans were found, and print.
     
-    return bank_data_filtered #return the list of qualifying loans to be referenced later
+    return bank_data_filtered #return the list of loans that the user qualified for
 
 
-#Write here, if no qualifying loans exists, sys.exit
+def save_qualifying_loans(qualifying_loans): #define function to save qualifying loans to csv, passing the list of qualifying loans
 
-def save_qualifying_loans(qualifying_loans): #define function save qualifying loans, passing the list of qualifying loans
-    """Saves the qualifying loans to a CSV file.
-
-    Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
-    """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-    if not qualifying_loans:
-        sys.exit("Unfortunately you have not qualified for a loan. Thank you for using our service and having an nice day.")
-    save_file = questionary.confirm("Would you like to save your qualifying loans?").ask()
+    if not qualifying_loans: #conditional - if no found qualifying loans...
+        sys.exit("Unfortunately you have not qualified for a loan. Thank you for using our service and having an nice day.") #if above is true, exit the system with note
+    save_file = questionary.confirm("Would you like to save your qualifying loans?").ask() #if above conditional is false, and they have qualified for a loan, ask them whether or not they want to save results and assingn to save_file
     
-    if save_file:
-        csvpath = questionary.text("Enter a file path to save your results(.csv):").ask()
-        csvpath = Path(csvpath)
-        save_csv(csvpath,qualifying_loans)
+    if save_file: #if above (save_file) was confirmed
+        csvpath = questionary.text("Enter a file path to save your results(.csv):").ask() #Prompt user to imput a csv path to export their results to
+        csvpath = Path(csvpath) #save their file path the csvpath using Path module
+        save_csv(csvpath,qualifying_loans) #call the imported function save_csv from fileio, passing csvpath and qualifying loans as arguments to save their qualified loan info to the path they chose
         
-            
-    #insert 
 
-def run(): #defining main function for running the script above 
-    """The main function for running the script."""
+def run(): #defining main function for running the script above
 
-    # Load the latest Bank data
-    bank_data = load_bank_data()
+    bank_data = load_bank_data() # Load the latest Bank data
 
-    # Get the applicant's information
-    credit_score, debt, income, loan_amount, home_value = get_applicant_info()
+    credit_score, debt, income, loan_amount, home_value = get_applicant_info() # Get the applicant's information
 
-    # Find qualifying loans
     qualifying_loans = find_qualifying_loans(
         bank_data, credit_score, debt, income, loan_amount, home_value
-    )
+    ) # Find qualifying loans
 
-    # Save qualifying loans
-    save_qualifying_loans(qualifying_loans)
+    save_qualifying_loans(qualifying_loans) # Save qualifying loans
 
 
-if __name__ == "__main__":
-    fire.Fire(run)
+if __name__ == "__main__": #Asks the Python module whether this is the main file 
+    fire.Fire(run) #uses Python fire to execute all the code including imported modules from the directory

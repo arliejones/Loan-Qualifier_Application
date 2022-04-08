@@ -1,35 +1,13 @@
-# -*- coding: utf-8 -*-
-"""A Collection of Financial Calculators.
-
-This script contains a variety of financial calculator functions needed to
-determine loan qualifications.
-
-"""
+"""Financial calculator functions needed to determine loan qualifications."""
 
 
-def calculate_monthly_debt_ratio(monthly_debt_payment, monthly_income):
-    """Calculates users monthly debt to income ratio.
-
-    Args:
-        monthly_debt_payment (int): The total monthly debt.
-        monthly_income (int): The total monthly income.
-
-    Returns:
-        The monthly debt ratio
-    """
-    monthly_debt_ratio = int(monthly_debt_payment) / int(monthly_income)
-    return monthly_debt_ratio
+def calculate_monthly_debt_ratio(monthly_debt_payment, monthly_income): #function calculate monthly debt ratio passing monthly debt payment and monthly income
+    
+    monthly_debt_ratio = int(monthly_debt_payment) / int(monthly_income) #calculates monthly debt ratio - also converting inputs to integers - and assigns to variable
+    return monthly_debt_ratio #returns monthly debt ratio to be used further in app.py
 
 
-def calculate_loan_to_value_ratio(loan_amount, home_value):
-    """Calculates users loan to value ratio based on inputs.
-
-    Args:
-        loan_amount (int): The requested loan amount.
-        home_value (int): The home value.
-
-    Returns:
-        The loan-to-value ratio.
-    """
-    loan_to_value_ratio = int(loan_amount) / int(home_value)
-    return loan_to_value_ratio
+def calculate_loan_to_value_ratio(loan_amount, home_value): #function calculate loan to value ratio passing loan amount and home value parameters
+    
+    loan_to_value_ratio = int(loan_amount) / int(home_value) #calculates loan to value ratio - also converting inputs to integers - and assigns to variable
+    return loan_to_value_ratio #returns loan_to_value_ratio to be used further in app.py

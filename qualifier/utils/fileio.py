@@ -1,42 +1,26 @@
-# -*- coding: utf-8 -*-
-"""Helper functions to load and save CSV data.
+"""Helper functions to load and save CSV data."""
 
-This contains a helper function for loading and saving CSV files.
-
-"""
-import csv
+import csv #import the csv function library
 
 
-def load_csv(csvpath):
-    """Reads the CSV file from path provided.s
+def load_csv(csvpath): #defining function load_csv 
+    
+    with open(csvpath, "r") as csvfile: #use with open function to open the csv file from the Path as a reader csvfile
+        data = [] #create a new list for data to append data to later on
+        csvreader = csv.reader(csvfile, delimiter=",") #names file inputted as the csvreader and opens by passing csvfile
 
-    Args:
-        csvpath (Path): The csv file path.
+        next(csvreader) # Skip the CSV Header
 
-    Returns:
-        A list of lists that contains the rows of data from the CSV file.
-
-    """
-    with open(csvpath, "r") as csvfile:
-        data = []
-        csvreader = csv.reader(csvfile, delimiter=",")
-
-        # Skip the CSV Header
-        next(csvreader)
-
-        # Read the CSV data
-        for row in csvreader:
-            data.append(row)
-    return data
+        for row in csvreader: #iterates through the rows od data in the csv file given
+            data.append(row) #appends the empty list data with the new rows of data
+    return data #Returns a list of lists that contain the rows of data from the csv file inputted
 
 
-#WRITE HERE THE FUNCTION FOR SAVING CSV
+def save_csv(csvpath, qualifying_loans): #Defining function save_csv 
 
-def save_csv(csvpath, qualifying_loans): 
+    with open(csvpath, "w") as csvfile: #use with open function to open the csv file from the path as a writer csvfile
+        csvwriter = csv.writer(csvfile, delimiter=",") #names file inputted as the csvwriter and opens it by passing csvfile
 
-    with open(csvpath, "w") as csvfile:
-        csvwriter = csv.writer(csvfile, delimiter=",")
-
-        for loan in qualifying_loans:
-            csvwriter.writerow(loan)
+        for loan in qualifying_loans: #iterates through the list of qualifying loans
+            csvwriter.writerow(loan) #csv writer writes out the rows of data from the qualifying loans list
 

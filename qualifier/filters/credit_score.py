@@ -1,24 +1,10 @@
-# -*- coding: utf-8 -*-
-"""Credit Score Filter.
-
-This script filters a bank list by the user's minimum credit score.
-
-"""
+"""Credit Score Filter: filters a bank list by the user's minimum credit score."""
 
 
-def filter_credit_score(credit_score, bank_list):
-    """Filters the bank list by the mininim allowed credit score set by the bank.
+def filter_credit_score(credit_score, bank_list): #def filter credit score function passing credit score and bank list parameters
 
-    Args:
-        credit_score (int): The applicant's credit score.
-        bank_list (list of lists): The available bank loans.
-
-    Returns:
-        A list of qualifying bank loans.
-    """
-
-    credit_score_approval_list = []
-    for bank in bank_list:
-        if credit_score >= int(bank[4]):
-            credit_score_approval_list.append(bank)
-    return credit_score_approval_list
+    credit_score_approval_list = [] #create empty list to append approved loans to later
+    for bank in bank_list: #for loop to iterate through bank list 
+        if credit_score >= int(bank[4]): #conditional statement, if credit score is greater then or equal to the minimum allowed credit score referenced by index 4
+            credit_score_approval_list.append(bank) #if above is true, append the credit score approval list with the available bank loans
+    return credit_score_approval_list #return the list of qualifying bank loans
