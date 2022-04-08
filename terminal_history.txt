@@ -1,0 +1,963 @@
+   50  ls
+   51  cd Documents
+   52  ls
+   53  cd ~
+   54  cd Documents
+   55  ls
+   56  cd ~
+   57  cd Desktop
+   58  ls
+   59  cd Class_1_Activities
+   60  ls
+   61  cd 03_Ins_Lists
+   62  ls
+   63  cd Solved
+   64  conda activate dev
+   65  python lists.py
+   66  conda deactivate
+   67  cd ~
+   68  exit
+   69  cd Desktop
+   70  cd Desktop
+   71  ls
+   72  cd Class_1_Activities
+   73  ls
+   74  cd 03_Ins_Lists
+   75  cd Solved
+   76  conda activate dev
+   77  python lists.py
+   78  python lists.py
+   79  python lists.py
+   80  cd Desktop
+   81  ls
+   82  cd ft_workspace
+   83  ls
+   84  cd 03_The_401k_Shuffle
+   85  cd Unsolved
+   86  conda activate dev
+   87  python the_401k_shuffle.py
+   88  % python the_401k_shuffle.py
+   89  % python the_401k_shuffle.py
+   90  % python the_401k_shuffle.py
+   91  % python the_401k_shuffle.py
+   92  python the_401k_shuffle.py
+   93  python the_401k_shuffle.py
+   94  python the_401k_shuffle.py
+   95  python the_401k_shuffle.py
+   96  python the_401k_shuffle.py
+   97  python the_401k_shuffle.py
+   98  python the_401k_shuffle.py
+   99  python the_401k_shuffle.py
+  100  python the_401k_shuffle.py
+  101  python the_401k_shuffle.py
+  102  python the_401k_shuffle.py
+  103  python the_401k_shuffle.py
+  104  conda deactivate
+  105  cd ~
+  106  cd Desktop
+  107  $ cd
+  108  $cd
+  109  ls
+  110  cd Starter_code.zip
+  111  $cd
+  112  cd resume stuff
+  113  cd Activities
+  114  $cd
+  115  cd $
+  116  cd .
+  117  cd ...
+  118  cd ..
+  119  cd ft_workspace
+  120  ls
+  121  cd class_activities.py
+  122  cd .
+  123  cd ..
+  124  exit
+  125  conda activate dev
+  126  python cond_logic.py
+  127  python cond_logic.py
+  128  conda activate dev
+  129  python cond_logic.py
+  130  python cond_logic.py
+  131  python cond_logic.py
+  132  python cond_logic.py
+  133  python cond_logic.py
+  134  python cond_logic.py
+  135  python cond_logic.py
+  136  python cond_logic.py
+  137  python cond_logic.py
+  138  cd ..
+  139  conda deactivate
+  140  ls
+  141  cd 01_Conditional_Statement
+  142  cd Unsolved
+  143  python conditional_statement.py
+  144   python conditional_statement.py
+  145  cd Desktop
+  146  ls
+  147  cd ft_workspace
+  148  ls
+  149  cd 01_Conditional_Statement/Unsolved
+  150  python conditional_statement.py
+  151  exit
+  152  python
+  153  python nested_conditionals.py
+  154  python nested_condtitionals.py
+  155  python nested_condtitionals.py
+  156  exit
+  157  cd Desktop
+  158  ls
+  159  cd ft_workspace
+  160  ls
+  161  cd 02_Nested_Conditionals/Unsolved
+  162  python nested_conditionals.py
+  163  python nested_conditionals.py
+  164  python nested_conditionals.py
+  165  python nested_conditionals.py
+  166  conda deactivate
+  167  exit
+  168  conda activate dev
+  169  python split_second_homebuying.py
+  170  split_second_homebuying.py
+  171  python split_second_homebuying.py
+  172  python split_second_homebuying.py
+  173  python split_second_homebuying.py
+  174  conda deactivate 
+  175  cd ~
+  176  cd Desktop
+  177  cd ft_workspace
+  178  ls
+  179  cd class_activities.py
+  180  ls
+  181  cd functions.py
+  182  conda activate dev
+  183  python functions.py
+  184  def add(first_number, second_number):\n    total = first_number + second_number\n    print("Your total is: ", total)
+  185  python functions.py
+  186  python functions.py
+  187  conda deactivate
+  188  cd ..
+  189  ls
+  190  cd Python_Project.py
+  191  ls
+  192  cd ..
+  193  cd ..
+  194  cd Desktop
+  195  ls
+  196  cd Starter_Code
+  197  ls
+  198  conda activate dev
+  199  python loan_analyzer.py
+  200  loan_analyzer.py
+  201  python loan_analyzer.py
+  202  python loan_analyzer.py
+  203  python loan_analyzer.py
+  204  python loan_analyzer.py
+  205  python loan_analyzer.py
+  206  python loan_analyzer.py
+  207  python loan_analyzer.py
+  208  python loan_analyzer.py
+  209  python loan_analyzer.py
+  210  python loan_analyzer.py
+  211  python loan_analyzer.py
+  212  python loan_analyzer.py
+  213  cd ~
+  214  conda deactivate
+  215  cd Desktop
+  216  ls
+  217  cd Challenges
+  218  conda activate dev
+  219  python loan_analyzer.py
+  220  python loan_analyzer.py
+  221  # python loan_analyzer.py
+  222  python loan_analyzer.py
+  223  python loan_analyzer.py
+  224  conda activate dev
+  225  python a_definitive_buy.py
+  226  conda deactivate
+  227  cd ..
+  228  cd ..
+  229  ls
+  230  cd class_activities.py
+  231  cd Desktop
+  232  cd ..
+  233  cd..
+  234  exit
+  235  cd Desktop
+  236  cd Module 1
+  237  ls
+  238  cd Module 1
+  239  ls
+  240  cd Module1
+  241  conda activate dev
+  242  python functions.py
+  243  python functions.py
+  244  python functions.py
+  245  ls
+  246  cd 02_Returned_Goods
+  247  cd Unsolved
+  248  python returned_goods.py
+  249  cd..
+  250  cd ..
+  251  cd ..
+  252  ls
+  253  cd 03_Split_Second_Homebuying_Part_2/Unsolved
+  254  python split_second_part_2.py
+  255  present_value = expected_sale_price / (1 + (hurdle_rate / 12)) ** holding_months
+  256  python split_second_part_2.py
+  257  python split_second_part_2.py
+  258  python split_second_part_2.py
+  259  python split_second_part_2.py
+  260  python split_second_part_2.py
+  261  python split_second_part_2.py
+  262  conda activate dev
+  263  python split_second_part_2.py
+  264  python split_second_part_2.py
+  265  /Users/arliejones/Desktop/Module1/Class_2_Activities/05_Stu_Conditionals/Unsolved/conditionals.py
+  266  cd /Users/arliejones/Desktop/Module1/Class_2_Activities/05_Stu_Conditionals/Unsolved/conditionals.py
+  267  cd Module1/Class_2_Activities/05_Stu_Conditionals/Unsolved
+  268  cd Deskto
+  269  cd Desktop
+  270  cd Module1
+  271  ls
+  272  clear
+  273  clear
+  274  clear
+  275  ls
+  276  python functions.py
+  277  cd 02_Returned_Goods
+  278  ls
+  279  cd Solved
+  280  ls
+  281  python returned_goods.py
+  282  cd ..
+  283  cd Unsolved
+  284  ls
+  285  python returned_goods.py
+  286  clear
+  287  cd ..
+  288  cd ..
+  289  clear
+  290  cd Desktop
+  291  ls
+  292  cd Module 1
+  293  cd Module1
+  294  python iterators.py
+  295  conda activate dev
+  296  python iterators.py
+  297  python iterators.py
+  298  python iterators.py
+  299  python iterators.py
+  300  python iterators.py
+  301  python iterators.py
+  302  python iterators.py
+  303  python iterators.py
+  304  for some_item in words:\n    print(some_item.upper())
+  305  for some_item in words:\n    print(some_item.upper())
+  306  for some_item in words:\n    print(some_item.upper())
+  307  for some_item in words:\n    print(some_item.upper())
+  308  for some_item in words:\n    print(some_item.upper()\python
+  309  clear
+  310  python iterators.py
+  311  python iterators.py
+  312  python iterators.py
+  313  clear
+  314  python iterators.py
+  315  python iterators.py
+  316  python iterators.py
+  317  python iterators.py
+  318  python iterators.py
+  319  python iterators.py
+  320  python iterators.py
+  321  python iterators.py
+  322  python iterators.py
+  323  ls
+  324  cd 01_Racking_Up_The_Profit
+  325  cd Unsolved
+  326  clear
+  327  python racking_up_the_profit.py
+  328  python racking_up_the_profit.py
+  329  cd ..
+  330  cd ..
+  331  clear
+  332  python nesting_data.py
+  333  python nesting_data.py
+  334  python nesting_data.py
+  335  python nesting_data.py
+  336  python nesting_data.py
+  337  python nesting_data.py
+  338  amazon_data = table_data[2]\namazon_opening_price = amazon_data[1]\nprint(amazon_opening_price)
+  339  amazon_data = table_data[2]\namazon_opening_price = amazon_data[1]\nprint(amazon_opening_price)
+  340  python nesting_data.pu
+  341  pythonn nesting_data.py
+  342  python nesting_data.py
+  343  python nesting_data.py
+  344  python nesting_data.py
+  345  python nesting_data.py
+  346  python nesting_data.py
+  347  for row in table_data:\n    ticker = row[0]\n    print(ticker)
+  348  cd Desktop
+  349  cd Module1
+  350  conda activate dev
+  351  python nesting_data.py
+  352  python nesting_data.py
+  353  python nesting_data.py
+  354  python nesting_data.py
+  355  python nesting_data.py
+  356  conda deactivate
+  357  cd ~
+  358  python
+  359  import pathlib
+  360  cd Desktop
+  361  cd Module1
+  362  python imports.py
+  363  python imports.py
+  364  ls
+  365  cd 02_Pathways_to_Success_Part_1/Unsolved
+  366  conda activate dev
+  367  python pathways_to_success.py
+  368  conda deactivate
+  369  conda activate dev
+  370  python pathways_to_success.py
+  371  conda deactivate
+  372  conda activate dev
+  373  conda deactivate
+  374  cd ..
+  375  ls
+  376  cd 02_Pathways_to_Success_Part_1
+  377  conda activate dev
+  378  python pathways_to_success.py
+  379  cd Unsolved
+  380  python pathways_to_success.py
+  381  python pathways_to_success.py
+  382  python pathways_to_success.py
+  383  python pathways_to_success.py
+  384  cd ..
+  385  cd ..
+  386  ls
+  387  cd 03_Pathways_to_Success_Part_2
+  388  cd Unsolved
+  389  python pathways_to_success_part_2.py
+  390  python pathways_to_success_part_2.py
+  391  python automated_equity_rounds.py
+  392  clea
+  393  conda activate dev
+  394  python loan_analyzer.py
+  395  python loan_analyzer.py
+  396  python loan_analyzer.py
+  397  python loan_analyzer.py
+  398  "Remaining Months: ",remaining_months)
+  399  "Remaining Months: ",remaining_months)
+  400  python loan_analyzer.py
+  401  python loan_analyzer.py
+  402  python loan_analyzer.py
+  403  python loan_analyzer.py
+  404  clear
+  405  python loan_analyzer.py
+  406  python loan_analyzer.py
+  407  python loan_analyzer.py
+  408  python loan_analyzer.py
+  409  python loan_analyzer.py
+  410  python loan_analyzer.py
+  411  python loan_analyzer.py
+  412  python loan_analyzer.py
+  413  python loan_analyzer.py
+  414  python loan_analyzer.py
+  415  python loan_analyzer.py
+  416  python loan_analyzer.py
+  417  python loan_analyzer.py
+  418  python loan_analyzer.py
+  419  python loan_analyzer.py
+  420  python loan_analyzer.py
+  421  python loan_analyzer.py
+  422  python loan_analyzer.py
+  423  python loan_analyzer.py
+  424  python loan_analyzer.py
+  425  python loan_analyzer.py
+  426  python loan_analyzer.py
+  427  python loan_analyzer.py
+  428  python loan_analyzer.py
+  429  python loan_analyzer.py
+  430  python loan_analyzer.py
+  431  python loan_analyzer.py
+  432  python loan_analyzer.py
+  433  python loan_analyzer.py
+  434  python loan_analyzer.py
+  435  python loan_analyzer.py
+  436  python loan_analyzer.py
+  437  python loan_analyzer.py
+  438  python loan_analyzer.py
+  439  python loan_analyzer.py
+  440  print("---------------------------------------------")\n
+  441  python loan_analyzer.py
+  442  python loan_analyzer.py
+  443  python loan_analyzer.py
+  444  python loan_analyzer.py
+  445  python loan_analyzer.py
+  446  python loan_analyzer.py
+  447  python loan_analyzer.py
+  448  python loan_analyzer.py
+  449  loan anaylzer.py
+  450  loan anaylzer.py
+  451  loan anaylzer.py
+  452  python loan analyzer.py
+  453  python loan_analyzer.py
+  454  loan anaylzer.py
+  455  python loan_analyzer.py
+  456  python loan_analyzer.py
+  457  python loan_analyzer.py
+  458  python loan_analyzer.py
+  459  python loan_analyzer.py
+  460  python loan_analyzer.py
+  461  conda deactivat
+  462  conda deactivate
+  463  clear
+  464  conda activate dev
+  465  pip -V
+  466  pip freeze
+  467  pip install fire
+  468  pip install questionary
+  469  conda deactivate
+  470  clear
+  471  cd Desktop
+  472  cd Module2
+  473  ls
+  474  cd 01_Loan_Qualifier_Financial_Calculations
+  475  cd Unsolved
+  476  python app.py
+  477  cd ..
+  478  cd ..
+  479  cd ..
+  480  conda activate dev
+  481  python loan_analyzer.py
+  482  python loan_analyzer.py
+  483  python loan_analyzer.py
+  484  python loan_analyzer.py
+  485  python loan_analyzer.py
+  486  python loan_analyzer.py
+  487  python loan_analyzer.py
+  488  python loan_analyzer.py
+  489  conda deactivate
+  490  cd ~
+  491  cd Desktop
+  492  cd Module1
+  493  cd ..
+  494  cd Module 2
+  495  cd Module2
+  496  ls
+  497  cd 02_Loan_Qualifier_Filtering_Data
+  498  cd Unsolved
+  499  conda activate dev
+  500  python app.py
+  501  python app.py
+  502  git config
+  503  cd Desktop
+  504  cd Challenges
+  505  ls
+  506  python loan_analyzer.py
+  507  python loan_analyzer.py
+  508  cd Desktop
+  509  cd Module 1
+  510  cd Module1
+  511  git clone git@ucb.bootcampcontent.com:UCB-Coding-Bootcamp/UCB-VIRT-FIN-PT-03-2022-U-B.git
+  512  cd Desktop
+  513  ls
+  514  cd Module2
+  515  ls
+  516  cd Class_1_Activities
+  517  ls
+  518  cd 01_Stu_Python_Code_Drills
+  519  ls
+  520  cd Unsolved
+  521  python dicts-02.py
+  522  ls
+  523  cd 05-dicts-02
+  524  python dicts-02.py
+  525  cd Unsolved
+  526  python dicts-02.py
+  527  python dicts-02.py
+  528  cd ~
+  529  /Users/arliejones/Desktop/Module2/Class_1_Activities/01_Stu_Python_Code_Drills/Unsolved/05-dicts-02/Unsolved/dicts-02.py
+  530  cd /Users/arliejones/Desktop/Module2/Class_1_Activities/01_Stu_Python_Code_Drills/Unsolved/05-dicts-02/Unsolved/dicts-02.py
+  531  python dicts-02.py
+  532  cd /Users/arliejones/Desktop/Module2/Class_1_Activities/01_Stu_Python_Code_Drills/Unsolved/05-dicts-02/Unsolved/
+  533  python dicts-02.py
+  534  python dicts-02.py
+  535  python dicts-02.py
+  536  python dicts-02.py
+  537  python dicts-02.py
+  538  python dicts-02.py
+  539  python dicts-02.py
+  540  python dicts-02.py
+  541  python csv-01.py
+  542  python csv-01.py
+  543  python csv-01.py
+  544  python csv-01.py
+  545  clear
+  546  cd ~
+  547  cd Desktop
+  548  ls
+  549  cd Module2
+  550  ls
+  551  cd 01_Loan_Qualifier_Financial_Calculations
+  552  cd Unsolve
+  553  cd Unsolved
+  554  python app.py
+  555  python app.py
+  556  cd ..
+  557  cd ..
+  558  ls
+  559  cd 01_Modularize_Your_Loan_Qualifier_Application_Part_2
+  560  cd Unsolved
+  561  python app.py
+  562  python app.py
+  563  clear
+  564  cd ~
+  565  cd Desktop/Challenges
+  566  conda activate dev
+  567  python loan_analyzer.py
+  568  python loan_analyzer.py
+  569  python loan_analyzer.py
+  570  python loan_analyzer.py
+  571  python loan_analyzer.py
+  572  for loan in inexpensive_loans:\n    csvwriter.writerow(loan.values())
+  573  for loan in inexpensive_loans:\n    csvwriter.writerow(loan.values())
+  574  for loan in inexpensive_loans:\n    csvwriter.writerow(loan.values())
+  575  for loan in inexpensive_loans:\n    csvwriter.writerow(loan.values())
+  576  python loan_analyzer.py
+  577  python loan_analyzer.py
+  578  python loan_analyzer.py
+  579  python loan_analyzer.py
+  580  python loan_analyzer.py
+  581  clear
+  582  python loan-analyzer.py
+  583  python loan_analyzer.py
+  584  cd Desktop
+  585  cd Module2
+  586  touch cli.py
+  587  python cli.pu
+  588  python cli.py
+  589  cd ~
+  590  pip install fire
+  591  cd Desktop/Module2
+  592  python cli.py
+  593  python cli.py
+  594  python cli.py
+  595  python cli.py
+  596  python cli.py
+  597  python cli.py
+  598  python cli.py
+  599  clear
+  600  python cli.py
+  601  python cli.py --pants=True
+  602  ls
+  603  cd 01_Adding_Fire_to_the_Loan_Qualifier_App
+  604  cd Unsolved
+  605  python app.py
+  606  python app.py
+  607  python app.py
+  608  python app.py --credit_score=750
+  609  cd ~
+  610  pip install questionary
+  611  cd Desktop/Module2
+  612  python dialogue.py
+  613  ls
+  614  python dialogue.py
+  615  python dialogue.py
+  616  python dialogue.py
+  617  questionary.text().ask()\npython dialogue.py
+  618  python dialogue.py
+  619  python app.py --credit_score+750 --debt=500 --income=2000
+  620  python app.py --credit_score=750 --debt=5000 --income=20000
+  621  python app.py
+  622  conda activate dev
+  623  python app.py
+  624  python app.py
+  625  -al ~/.ssh
+  626  ls -al ~/.ssh
+  627  $ ssh -T git@github.com
+  628  ssh -T git@github.com
+  629  cat ~/.ssh/id_rsa.pub
+  630  cd Desktop/Module2
+  631  ls
+  632  cd UCB-VIRT-FIN-PT-03-2022-U-B-main-Activities-02-Financial-Applications-Python-1-Activities
+  633  ls
+  634  cd Activities
+  635  ls
+  636  cd 02-Financial-Applications-Python
+  637  ls
+  638  cd 1
+  639  ls
+  640  cd Activities
+  641  ls 
+  642  cd 04_Stu_ATM_Application_Code
+  643  cd Unsolved
+  644  clear
+  645  python atm.py
+  646  conda activate dev
+  647  python atm.py
+  648  cd ..
+  649  cd Unsolved
+  650  python atm.py
+  651  clear
+  652  cd ~
+  653  cd /Users/arliejones/Desktop/Module2/UCB-VIRT-FIN-PT-03-2022-U-B-main-Activities-02-Financial-Applications-Python-1-Activities/Activities/02-Financial-Applications-Python/1/Activities/05_Stu_ATM_Modularization/Unsolved/atm/atm.py
+  654  cd /Users/arliejones/Desktop/Module2/UCB-VIRT-FIN-PT-03-2022-U-B-main-Activities-02-Financial-Applications-Python-1-Activities/Activities/02-Financial-Applications-Python/1/Activities/05_Stu_ATM_Modularization/Unsolved/atm
+  655  atm.py
+  656  python atm.py
+  657  python atm.py
+  658  git clone git@github.com:arliejones/Loan-Qualifier-Application.git
+  659  git config --global.user.name <Arlie Jones>
+  660  git config --global user.name <Arlie Jones>
+  661  nfig --global user.name <your first and last name
+  662  git config --global user.name <Arlie Jones>
+  663  git config --global user.name Arlie Jones
+  664  git config --global user.email arliejones98@gmail.com
+  665  git config --list
+  666  cd Desktop
+  667  ls
+  668  cd Challenge2
+  669  ls
+  670  git clone https://github.com/arliejones/Loan-Qualifier-Application.git
+  671  git status
+  672  ls
+  673  cd Loan-Qualifier-Application
+  674  git status
+  675  git add README.md
+  676  git status
+  677  git commit -m "Testing commit through terminal commands"
+  678  git status
+  679  git push
+  680  git push
+  681  git push
+  682  git push
+  683  cd ~
+  684  cd Desktop
+  685  cd Challenge1
+  686  ls
+  687  cd python loan_analyzer.py
+  688  python loan_analyzer.py
+  689  python loan_analyzer.py
+  690  python loan_analyzer.py
+  691  python loan_analyzer.py
+  692  cd ~
+  693  git clone https://github.com/arliejones/Loan-Qualifier-Application.git
+  694  git status
+  695  add README.md
+  696  git add README.md
+  697  git status
+  698  git commit -m "Update through VS code terminal push"
+  699  git status
+  700  git push
+  701  git push
+  702  clear
+  703  git pull
+  704  git clone https://github.com/arliejones/Loan-Qualifier_Application.git
+  705  ls
+  706  cd Loan-Qualifier_Application
+  707  git status
+  708  git add README.md
+  709  git add app.py
+  710  git add data
+  711  git add qualifier
+  712  git commit -m "initial file commit"
+  713  git push
+  714  cd Desktop/Challenge2
+  715  cd
+  716  ls
+  717  cd Desktop/Challeng2
+  718  cd Desktop/Challenge2
+  719  ls
+  720  cd Loan-Qualifier_Application
+  721  clear
+  722  git status
+  723  git add README.md
+  724  git status
+  725  git commit -m "additions to readme"
+  726  git push
+  727  git add README.md
+  728  git status
+  729  cd Desktop/Challenge2
+  730  ls
+  731  cd Loan-Qualifier_Application
+  732  python app.py
+  733  cd Desktop/Challenge2
+  734  ls
+  735  cd Loan-Qualifier_Application
+  736  git status
+  737  git add README.md
+  738  git commit -m"further additions to readme"
+  739  git push
+  740  git status
+  741  cd Desktop/Challenge2
+  742  ls
+  743  cd Loan-Qualifier_Application
+  744  git status
+  745  git add app.py
+  746  git status
+  747  git commit -m"added comments on existing code"
+  748  git push
+  749  git add README.md
+  750  git status
+  751  git commit -m "additions to readme"
+  752  git push
+  753  cd ~
+  754  conda activate dev
+  755  conda list pandas
+  756  conda list jupyterlab
+  757  conda deactivate
+  758  conda activate dev
+  759  python -m ipykernel install --user --name dev --display-name "Python (dev)"
+  760  jupyter lab
+  761  conda deactivate
+  762  conda activate dev
+  763  jupyter lab
+  764  cd Desktop/Module3
+  765  ls
+  766  cd 01_Importing_the_VIX
+  767  cd Unsolved
+  768  conda activate dev
+  769  jupyter lab
+  770  conda deactivate
+  771  .. cd
+  772  cd ..
+  773  cd ..
+  774  ls
+  775  cd 02_Fix_Column_Headers
+  776  conda activate dev
+  777  clear
+  778  jupyter lab
+  779  conda deactivate
+  780  cd ..
+  781  clear
+  782  conda activate dev
+  783  jupyter lab
+  784  conda deacttivate
+  785  yes
+  786  conda activate dev
+  787  jupyter lab
+  788  conda deactivate
+  789  clear
+  790  cd ~
+  791  cd Desktop/Challenge2
+  792  git status
+  793  ls
+  794  cd Loan-Qualifier_Application
+  795  ls
+  796  git status
+  797  add README.md
+  798  git add README.md
+  799  git commit -m "changes to README.md"
+  800  git push
+  801  python app.py
+  802  python app.py
+  803  python app.py
+  804  cd Desktop/Module3
+  805  ls
+  806  cd 01-Missing_Data
+  807  conda activate dev
+  808  jupyter lab
+  809  conda deactivate
+  810  cd ..
+  811  ls
+  812  cd 01_Missing_Money
+  813  ls
+  814  conda activate dev
+  815  jupyter lab
+  816  conda deactivate
+  817  cd ..
+  818  ls
+  819  cd 02_Dollars_and_Change
+  820  conda activate dev
+  821  jupyter lab
+  822  conda deactivate
+  823  cd  ~
+  824  conda activate dev
+  825  conda activate dev
+  826  jupyter lab
+  827  conda deactivate
+  828  cd Desktop/Module3
+  829  ls
+  830  cd 01-Summary_Statistics
+  831  conda activate dev
+  832  jupyter lab
+  833  cd ..
+  834  ls
+  835  cd 01_Visualize_the_VIX
+  836  jupyter lab
+  837  cd ..
+  838  ls
+  839  cd Notebooks
+  840  jupyter lab
+  841  cd ..
+  842  ls
+  843  cd 02_Rowing_for_Yield
+  844  jupyter lab
+  845  cd ..
+  846  ls
+  847  cd 03_Rowing_for_Yield_Redux
+  848  jupyter lab
+  849  cd ..
+  850  ls
+  851  cd 04_Banking_Bonanza
+  852  jupyter lab
+  853  conda deactivate
+  854  cd Desktop
+  855  ls
+  856  cd Challenge2
+  857  ls
+  858  cd Loan-Qualifier_Application
+  859  jupyter lab
+  860  conda activate dev
+  861  ls
+  862  python app.py
+  863  git status
+  864  git status
+  865  cd ..
+  866  git status
+  867  ls 
+  868  cd Loan-Qualifier_Application
+  869  git status
+  870  git config --global arliejones Arlie Jones
+  871  xcode-select --install
+  872  xcode-select --install
+  873  cd Desktop/Challenge2
+  874  git status
+  875  ls
+  876  cd Loan-Qualifier_Application
+  877  git status
+  878  conda activate dev
+  879  cd Desktop/Challenge3
+  880  git clone https://github.com/arliejones/BTC_Financial_Analysis.git
+  881  ls
+  882  cd BTC_Financial_Analysis
+  883  ls
+  884  git status
+  885  git add .DS_Store
+  886  git add Resources/crypto_arbitrage.ipynb
+  887  git add Resources/\n\tcrypto_arbitrage.ipynb
+  888  git add Resources
+  889  git add crypto_arbitrage.ipynb
+  890  git status
+  891  git commit -m "initial starter code commit"
+  892  git push
+  893  ls
+  894  conda activate dev
+  895  jupyter lab
+  896  conda deactivate
+  897  ls
+  898  git status
+  899  git add crypto_arbitrage.ipynb
+  900  git status
+  901  git commit -m"code added for collecting data"
+  902  git push
+  903  jupyter lab
+  904  git status
+  905  git add README.md
+  906  git add crypto_arbitrage.ipynb
+  907  git status
+  908  git commit -m"Readme file template added"
+  909  git push
+  910  cd ~
+  911  cd Desktop/Challenge2
+  912  ks
+  913  ls
+  914  cd Loan-Qualifier_Application
+  915  ls
+  916  python app.py
+  917  conda activate dev
+  918  conda deactivate
+  919  cd Desktop/Module3
+  920  ls
+  921  cd 01-Bitcoin_Collections
+  922  conda activate dev
+  923  jupyter lab
+  924  conda deactivate
+  925  cd ..
+  926  ls
+  927  cd 03-Bitcoin_Month_Week_Day
+  928  conda activate dev
+  929  jupyter lab
+  930  jupyter lab
+  931  conda deactivate
+  932  cd Desktop/Challenge2
+  933  ls
+  934  cd Loan-Qualifier_Application
+  935  conda activate dev
+  936  python app.py
+  937  python app.py
+  938  python app.py
+  939  python app.py
+  940  python app.py
+  941  git status
+  942  git add README.md
+  943  git add app.py
+  944  git add qualifier/utils/fileio.py
+  945  git status
+  946  git commit -m"working code added"
+  947  git push
+  948  conda deactivate
+  949  c ~
+  950  cd ~
+  951  cd Desktop/Module3
+  952  ls
+  953  cd 03-Bitcoin_Month_Week_Day
+  954  conda activate dev
+  955  jupyter lab
+  956  conda deactivate
+  957  clear
+  958  cd ..
+  959  cd ..
+  960  cd Challenge3/BTC_Financial_Analysis
+  961  conda activate dev
+  962  jupyter lab
+  963  conda deactivate
+  964  cd Desktop/Module3
+  965  ls
+  966  cd 03-Bitcoin_Month_Week_Day
+  967  conda activate dev
+  968  jupyter lab
+  969  conda deactivate
+  970  clear
+  971  cd Desktop/Challenge2
+  972  ls
+  973  cd Loan-Qualifier_Application
+  974  conda activate dev
+  975  python app.py
+  976  python app.py
+  977  python app.py
+  978  git status
+  979  git add app.py
+  980  git add qualifier/filters/credit_score.py
+  981  git add qualifier/filters/debt_to_income.py
+  982  git add qualifier/filters/loan_to_value.py
+  983  git add qualifier/filters/max_loan_size.py
+  984  git add qualifier/utils/calculators.py
+  985  git add qualifier/utils/fileio.py
+  986  git status
+  987  git commit -m"Final code with updated comments"
+  988  git push
+  989  git push
+  990  python app.py
+  991  clear
+  992  python app.py
+  993  python app.py
+  994  cd Desktop/Challeng2
+  995  cd Desktop/Challenge2
+  996  ls
+  997  cd Loan-Qualifier_Application
+  998  python app.py
+  999  python app.py
+ 1000  exit
+ 1001  cd Desktop/Challenge2
+ 1002  ls
+ 1003  cd Loan-Qualifier_Application
+ 1004  conda activate dev
+ 1005  git status
+ 1006  git add app.py
+ 1007  git add README.md
+ 1008  got add usage_for_readme/
+ 1009  git add usage_for_readme/
+ 1010  git status
+ 1011  git commit -m"readme additions and minor code fixes"
+ 1012  git push
