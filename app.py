@@ -63,7 +63,7 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 def save_qualifying_loans(qualifying_loans): #define function to save qualifying loans to csv, passing the list of qualifying loans
 
     if not qualifying_loans: #conditional - if no found qualifying loans...
-        sys.exit("Unfortunately you have not qualified for a loan. Thank you for using our service and having an nice day.") #if above is true, exit the system with note
+        sys.exit("Unfortunately you have not qualified for a loan. Thank you for using our service and have a nice day.") #if above is true, exit the system with note
     save_file = questionary.confirm("Would you like to save your qualifying loans?").ask() #if above conditional is false, and they have qualified for a loan, ask them whether or not they want to save results and assingn to save_file
     
     if save_file: #if above (save_file) was confirmed
